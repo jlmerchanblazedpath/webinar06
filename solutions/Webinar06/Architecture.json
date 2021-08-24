@@ -1,0 +1,32 @@
+{
+  "systems": [
+    {
+      "name": "DbMongo",
+      "type": "Mongodb",
+      "x": 549,
+      "y": 285
+    },
+    {
+      "name": "DbSql",
+      "type": "RelationalDatabase",
+      "x": 554,
+      "y": 103
+    },
+    {
+      "name": "MsExpressions",
+      "type": "Microservice",
+      "x": 259,
+      "y": 179
+    }
+  ],
+  "references": [
+    {
+      "fromSystemName": "MsExpressions",
+      "toSystemName": "DbMongo"
+    },
+    {
+      "fromSystemName": "MsExpressions",
+      "toSystemName": "DbSql"
+    }
+  ]
+}

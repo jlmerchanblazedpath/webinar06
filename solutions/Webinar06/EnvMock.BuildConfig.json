@@ -1,0 +1,78 @@
+{
+  "items": [
+    {
+      "systemName": "DbSql",
+      "action": "mock",
+      "mockInitialization": {
+        "records": [
+          {
+            "rdsTableName": "TblCourses",
+            "courseId": "Chemistry",
+            "code": "CHEM",
+            "name": "Chemistry"
+          },
+          {
+            "rdsTableName": "TblCourses",
+            "courseId": "Math",
+            "code": "MATH",
+            "name": "Mathematics"
+          },
+          {
+            "rdsTableName": "TblCourses",
+            "courseId": "Physics",
+            "code": "PHYS",
+            "name": "Physics"
+          },
+          {
+            "rdsTableName": "TblInscriptions",
+            "inscriptionId": "One",
+            "courseId": "Chemistry",
+            "creationDatetime": "2021-08-17T16:43:00.000Z",
+            "studentId": "Simon"
+          },
+          {
+            "rdsTableName": "TblInscriptions",
+            "inscriptionId": "Two",
+            "courseId": "Math",
+            "creationDatetime": "2021-08-12T16:43:00.000Z",
+            "studentId": "John"
+          },
+          {
+            "rdsTableName": "TblInscriptions",
+            "inscriptionId": "Three",
+            "courseId": "Chemistry",
+            "creationDatetime": "2021-08-11T16:43:00.000Z",
+            "studentId": "Jane"
+          },
+          {
+            "rdsTableName": "TblStudents",
+            "studentId": "Simon",
+            "birthDate": "2021-08-11T00:00:00.000Z",
+            "code": "SIMON",
+            "gender": "M",
+            "name": "Simon",
+            "surname": "Says"
+          },
+          {
+            "rdsTableName": "TblStudents",
+            "studentId": "John",
+            "birthDate": "2021-08-23T00:00:00.000Z",
+            "code": "JOHN",
+            "gender": "M",
+            "name": "John",
+            "surname": "Doe"
+          },
+          {
+            "rdsTableName": "TblStudents",
+            "studentId": "Jane",
+            "birthDate": "2021-08-08T00:00:00.000Z",
+            "code": "JANE",
+            "gender": "F",
+            "name": "Mary",
+            "surname": "Jane"
+          }
+        ]
+      }
+    }
+  ]
+}

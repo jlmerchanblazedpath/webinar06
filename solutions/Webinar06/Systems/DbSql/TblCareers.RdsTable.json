@@ -1,0 +1,58 @@
+{
+  "autoincrementalPrimaryKey": true,
+  "columns": [
+    {
+      "alias": "careerId",
+      "allowNull": false,
+      "dbTypes": [
+        {
+          "dbType": "INT",
+          "providerName": "MySql"
+        }
+      ],
+      "name": "CAREER_ID",
+      "primaryKey": true,
+      "type": "integer"
+    },
+    {
+      "alias": "code",
+      "allowNull": false,
+      "dbTypes": [
+        {
+          "dbType": "VARCHAR(80)",
+          "providerName": "MySql"
+        }
+      ],
+      "name": "CODE",
+      "primaryKey": false,
+      "type": "string"
+    },
+    {
+      "alias": "name",
+      "allowNull": false,
+      "dbTypes": [
+        {
+          "dbType": "VARCHAR(80)",
+          "providerName": "MySql"
+        }
+      ],
+      "name": "NAME",
+      "primaryKey": false,
+      "type": "string"
+    }
+  ],
+  "foreignKeys": [],
+  "indexes": [],
+  "isView": false,
+  "primaryKeyName": "TBL_CAREERS_PK",
+  "sequenceName": "",
+  "tableName": "tbl_careers",
+  "uniqueKeys": [
+    {
+      "columnsNames": [
+        "CODE"
+      ],
+      "name": "UK_CAREERS_1"
+    }
+  ]
+}

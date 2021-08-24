@@ -1,0 +1,95 @@
+{
+  "autoincrementalPrimaryKey": true,
+  "columns": [
+    {
+      "alias": "inscriptionId",
+      "allowNull": false,
+      "dbTypes": [
+        {
+          "dbType": "INT",
+          "providerName": "MySql"
+        }
+      ],
+      "name": "INSCRIPTION_ID",
+      "primaryKey": true,
+      "type": "integer"
+    },
+    {
+      "alias": "courseId",
+      "allowNull": false,
+      "dbTypes": [
+        {
+          "dbType": "INT",
+          "providerName": "MySql"
+        }
+      ],
+      "name": "COURSE_ID",
+      "primaryKey": false,
+      "type": "integer"
+    },
+    {
+      "alias": "creationDatetime",
+      "allowNull": false,
+      "dbTypes": [
+        {
+          "dbType": "DATETIME",
+          "providerName": "MySql"
+        }
+      ],
+      "name": "CREATION_DATETIME",
+      "primaryKey": false,
+      "type": "datetime"
+    },
+    {
+      "alias": "studentId",
+      "allowNull": false,
+      "dbTypes": [
+        {
+          "dbType": "INT",
+          "providerName": "MySql"
+        }
+      ],
+      "name": "STUDENT_ID",
+      "primaryKey": false,
+      "type": "integer"
+    }
+  ],
+  "foreignKeys": [
+    {
+      "alias": "student",
+      "details": [
+        {
+          "columnName": "STUDENT_ID",
+          "relatedColumnName": "STUDENT_ID"
+        }
+      ],
+      "name": "FK_INSCRIPTIONS_1",
+      "rdsTableName": "TblStudents"
+    },
+    {
+      "alias": "course",
+      "details": [
+        {
+          "columnName": "COURSE_ID",
+          "relatedColumnName": "COURSE_ID"
+        }
+      ],
+      "name": "FK_INSCRIPTIONS_2",
+      "rdsTableName": "TblCourses"
+    }
+  ],
+  "indexes": [],
+  "isView": false,
+  "primaryKeyName": "TBL_INSCRIPTIONS_PK",
+  "sequenceName": "",
+  "tableName": "tbl_inscriptions",
+  "uniqueKeys": [
+    {
+      "columnsNames": [
+        "STUDENT_ID",
+        "COURSE_ID"
+      ],
+      "name": "UK_INSCRIPTIONS_1"
+    }
+  ]
+}

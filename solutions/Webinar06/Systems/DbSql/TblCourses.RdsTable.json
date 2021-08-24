@@ -1,0 +1,58 @@
+{
+  "autoincrementalPrimaryKey": true,
+  "columns": [
+    {
+      "alias": "courseId",
+      "allowNull": false,
+      "dbTypes": [
+        {
+          "dbType": "INT",
+          "providerName": "MySql"
+        }
+      ],
+      "name": "COURSE_ID",
+      "primaryKey": true,
+      "type": "integer"
+    },
+    {
+      "alias": "code",
+      "allowNull": false,
+      "dbTypes": [
+        {
+          "dbType": "VARCHAR(80)",
+          "providerName": "MySql"
+        }
+      ],
+      "name": "CODE",
+      "primaryKey": false,
+      "type": "string"
+    },
+    {
+      "alias": "name",
+      "allowNull": false,
+      "dbTypes": [
+        {
+          "dbType": "VARCHAR(80)",
+          "providerName": "MySql"
+        }
+      ],
+      "name": "NAME",
+      "primaryKey": false,
+      "type": "string"
+    }
+  ],
+  "foreignKeys": [],
+  "indexes": [],
+  "isView": false,
+  "primaryKeyName": "TBL_COURSES_PK",
+  "sequenceName": "",
+  "tableName": "tbl_courses",
+  "uniqueKeys": [
+    {
+      "columnsNames": [
+        "CODE"
+      ],
+      "name": "UK_COURSES_1"
+    }
+  ]
+}
